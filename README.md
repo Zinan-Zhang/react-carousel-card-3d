@@ -25,5 +25,5 @@ yarn add react-carousel-card-3d
 Then import the Carousel component like so :
 
 ```
-import Carousel from 'react-carousel-card-3d';
+import { Carousel } from 'react-carousel-card-3d';
 ```
