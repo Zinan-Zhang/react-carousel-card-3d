@@ -1,1 +1,1 @@
-export * from './Carousel';
+export { Carousel, CarouselSlideType } from './Carousel';
