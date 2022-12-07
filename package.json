@@ -10,7 +10,8 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "npm run clean && tsc && cp package.json README.md ./dist"
+    "build": "npm run clean && tsc && cp package.json README.md ./dist",
+    "postpublish": "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$PACKAGE_VERSION && git push --tags"
   },
   "repository": {
     "type": "git",
@@ -31,7 +32,6 @@
     "react-dom": "^18.2.0"
   },
   "dependencies": {
-    "@emotion/styled": "^11.10.5",
     "react-spring": "^9.5.5"
   },
   "devDependencies": {

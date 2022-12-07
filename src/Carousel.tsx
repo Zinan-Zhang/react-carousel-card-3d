@@ -1,13 +1,6 @@
 import React, { Component } from 'react';
-import styled from '@emotion/styled';
 
 import CarouselSlide from './CarouselSlide';
-
-const Wrapper = styled.div`
-  position: relative;
-  width: 100%;
-  height: 100%;
-`;
 
 export type CarouselSlideType = {
   key: string | number;
@@ -161,7 +154,7 @@ class Carousel extends Component<CarouselProps, CarouselState> {
 
     return (
       <React.Fragment>
-        <Wrapper>
+        <div style={{ position: 'relative', width: '100%', height: '100%' }}>
           {this.getPresentableSlides().map((slide: CarouselSlideType, presentableIndex: number) => (
             <CarouselSlide
               key={slide.key}
@@ -174,7 +167,7 @@ class Carousel extends Component<CarouselProps, CarouselState> {
               animationConfig={animationConfig}
             />
           ))}
-        </Wrapper>
+        </div>
       </React.Fragment>
     );
   }
