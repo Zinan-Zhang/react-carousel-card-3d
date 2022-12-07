@@ -1,31 +1,17 @@
 {
   "files": ["index.ts"],
   "compilerOptions": {
-    "target": "es2015",
-    "module": "es2015",
-    "declaration": true,
-    "outDir": "./dist",
-    "moduleResolution": "node",
-    "jsx": "preserve",
-    "noEmit": false,
+    "target": "es5",
+    "module": "commonjs",
     "strict": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "strictBindCallApply": true,
-    "strictPropertyInitialization": true,
-    "noImplicitThis": true,
-    "alwaysStrict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedIndexedAccess": true,
-    "noPropertyAccessFromIndexSignature": true,
+    "declarationMap": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true
+    "resolveJsonModule": true,
+    "outDir": "./dist",
+    "skipLibCheck": true,
+    "declaration": true,
+    "jsx": "react"
   },
-  "include": ["./src"],
-  "exclude": [".dist", "./test", "node_modules"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }
