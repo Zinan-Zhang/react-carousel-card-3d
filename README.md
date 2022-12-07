@@ -6,7 +6,7 @@ A 3D Carousel component built with [React](https://reactjs.org/).
 
 ## Example
 
-[![Edit react-carousel-card-3d-example](https://codesandbox.io/s/github/Zinan-Zhang/react-carousel-card-3d-example)
+[![Edit react-carousel-card-3d-example](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/Zinan-Zhang/react-carousel-card-3d-example)
 
 ## Installation and usage
 
