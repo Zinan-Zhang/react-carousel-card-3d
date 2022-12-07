@@ -1,6 +1,6 @@
 {
   "name": "react-carousel-card-3d",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "description": "A 3D Carousel component built with React.",
   "engines": {
     "node": ">=16.17.0"
